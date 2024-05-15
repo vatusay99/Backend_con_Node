@@ -18,6 +18,8 @@ dbConections();
 // pass: sMuchjwn2iM20uGo - tTTR3kBYIUml4wrD
 // user: mean_user - sinedindnd171
 app.use('/api/usuarios', require('./routes/usuarios'));
+app.use('/api/hospital', require('./routes/hospitales'));
+app.use('/api/medicos', require('./routes/medicos'));
 app.use('/api/login', require('./routes/auth'));
 
 app.listen(process.env.PORT, ()=>{
